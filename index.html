@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="estilo.css">
+        <script src="script.js" ></script>
+        <title>Zoggos Store</title>
+    </head>
+    <body onload="construyeCatalogo('8','contenedor-items')">
+        <header>
+            <img src="img/zoggos-logo-transparencia.png">
+        </header>
+        <section class="contenedor">
+            <!--Productos -->
+            <div class="contenedor-items">
+                <div class="item">  
+                    <span class="titulo-item">Balón Nike</span>   
+                    <img src="img/balon-nike.jpg" alt="Balón Nike" class="img-item">   
+                    <span class="precio-item">$350.00</span>  
+                    <button class="boton-item" onclick="agregarAlCarritoClicked(event)">Agregar Producto</button> 
+                </div> 
+                <div class="item">  
+                    <span class="titulo-item">Maleta Deportiva</span>   
+                    <img src="img/maleta-deportiva.jpg" alt="Maleta Deportiva" class="img-item">   
+                    <span class="precio-item">$1,200.00</span>  
+                    <button class="boton-item" onclick="agregarAlCarritoClicked(event)">Agregar Producto</button> 
+                </div> 
+                <div class="item">  
+                    <span class="titulo-item">Reloj Inteligente</span>   
+                    <img src="img/reloj-inteligente.jpg" alt="Reloj Inteligente" class="img-item">   
+                    <span class="precio-item">$3,500.00</span>  
+                    <button class="boton-item" onclick="agregarAlCarritoClicked(event)">Agregar Producto</button> 
+                </div> 
+                <div class="item">  
+                    <span class="titulo-item">Balón Wilson</span>   
+                    <img src="img/balon-wilson.jpg" alt="Balón Wilson" class="img-item">   
+                    <span class="precio-item">$300.00</span>  
+                    <button class="boton-item" onclick="agregarAlCarritoClicked(event)">Agregar Producto</button> 
+                </div> 
+                <div class="item">  
+                    <span class="titulo-item">Pesas</span>   
+                    <img src="img/pesas.jpg" alt="Pesas" class="img-item">   
+                    <span class="precio-item">$876.00</span>  
+                    <button class="boton-item" onclick="agregarAlCarritoClicked(event)">Agregar Producto</button> 
+                </div> 
+                <div class="item">  
+                    <span class="titulo-item">Candado para Bicicleta</span>   
+                    <img src="img/candado-bicicleta.jpg" alt="Candado para Bicicleta" class="img-item">   
+                    <span class="precio-item">$240.00</span>  
+                    <button class="boton-item" onclick="agregarAlCarritoClicked(event)">Agregar Producto</button> 
+                </div> 
+                <div class="item">  
+                    <span class="titulo-item">Guantes para Box</span>
+                    <img src="img/guantes-box.jpg" alt="Guantes para Box" class="img-item">   
+                    <span class="precio-item">$780.00</span>  
+                    <button class="boton-item" onclick="agregarAlCarritoClicked(event)">Agregar Producto</button> 
+                </div> 
+                <div class="item">  
+                    <span class="titulo-item">Set de Béisbol</span>   
+                    <img src="img/set-beisbol.jpg" alt="Set de Béisbol" class="img-item">   
+                    <span class="precio-item">$999.00</span>  
+                    <button class="boton-item" onclick="agregarAlCarritoClicked(event)">Agregar Producto</button> 
+                </div> 
+            </div>
+            
+            <!-- Carrito -->
+            <div class="carrito" id="carrito">
+                <div class="header-carrito">
+                    <h2>Carrito</h2>
+                </div>
+
+                <div class="carrito-items">
+                </div>
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Total a pagar: </strong>
+                        <span class="carrito-precio-total">
+                            0
+                        </span>
+                    </div>
+                    <button class="btn-pagar" onclick="pagarClicked()">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div> © Zoggos Store</div>
+            <div> Todos los derechos e izquierdos reservados 2023</div>
+        </footer>
+    </body>
+</html>
